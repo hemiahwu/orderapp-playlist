@@ -1,13 +1,18 @@
 <template>
   <div id="app">
-    <router-view />
+    <div class="container">
+      <Header />
+      <router-view />
+    </div>
   </div>
 </template>
 
 <script>
+// 第二课: 构建导航
+import Header from "./components/Header";
 export default {
   name: "App.vue",
-  components: {}
+  components: { Header }
 };
 </script>
 
