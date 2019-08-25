@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home';
-import Menu from './views/Menu';
+import Menus from './views/Menus';
 import Admin from './views/Admin';
 import About from './views/about/About';
 import Login from './views/Login';
@@ -19,9 +19,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/menu',
-      name: 'menu',
-      component: Menu
+      path: '/menus',
+      name: 'menus',
+      component: Menus
     },
     {
       path: '/admin',

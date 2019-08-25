@@ -29,7 +29,7 @@
           <router-link class="nav-link" to="/">首页</router-link>
         </li>
         <li>
-          <router-link class="nav-link" to="/menu">菜单</router-link>
+          <router-link class="nav-link" to="/menus">菜单</router-link>
         </li>
         <li>
           <router-link class="nav-link" to="/admin">管理</router-link>
@@ -43,8 +43,7 @@
           <router-link class="nav-link" to="/register">注册</router-link>
         </li>
         <li>
-          <router-link tag="div" class="nav-link" to="/login">登录</router-link>
-          <!-- <router-link class="nav-link" to="/login">登录</router-link> -->
+          <router-link class="nav-link" :to="{name:'login'}">登录</router-link>
         </li>
       </ul>
     </nav>
