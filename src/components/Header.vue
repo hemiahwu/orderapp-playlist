@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="py-2" href="#">
+      <router-link class="py-2" to="/">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -22,28 +22,29 @@
           <line x1="14.31" y1="16" x2="2.83" y2="16" />
           <line x1="16.62" y1="12" x2="10.88" y2="21.94" />
         </svg>
-      </a>
-      <a href="/" class="navbar-brand">点餐系统</a>
+      </router-link>
+      <router-link to="/" class="navbar-brand">点餐系统</router-link>
       <ul class="navbar-nav">
         <li>
-          <a class="nav-link" href="#">首页</a>
+          <router-link class="nav-link" to="/">首页</router-link>
         </li>
         <li>
-          <a class="nav-link" href="#">菜单</a>
+          <router-link class="nav-link" to="/menu">菜单</router-link>
         </li>
         <li>
-          <a class="nav-link" href="#">管理</a>
+          <router-link class="nav-link" to="/admin">管理</router-link>
         </li>
         <li>
-          <a class="nav-link" href="#">关于</a>
+          <router-link class="nav-link" to="/about">关于</router-link>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
         <li>
-          <a class="nav-link" href="#">注册</a>
+          <router-link class="nav-link" to="/register">注册</router-link>
         </li>
         <li>
-          <a class="nav-link" href="#">登录</a>
+          <router-link tag="div" class="nav-link" to="/login">登录</router-link>
+          <!-- <router-link class="nav-link" to="/login">登录</router-link> -->
         </li>
       </ul>
     </nav>
@@ -52,7 +53,7 @@
 
 <script>
 export default {
-  name: "header",
+  name: "appHeader",
   components: {}
 };
 </script>
